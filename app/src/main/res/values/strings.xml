@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WhatToDo?</string>
+    <string name="Ola_TelaInicial">OLÁ!</string>
+    <string name="Info_TelaInicial"><b>Entre</b> para aprender cada vez mais, ou <b>cadastre-se</b> para iniciar seus estudos</string>
+    <string name="Botao_Entrar">Entre</string>
+    <string name="Botao_Cadastrar">Cadastre-se</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="Cadastro">Cadastre</string>
+    <string name="Info_TelaEntrar">ENTRE</string>
+    <string name="Email_Usuario">Digite seu nome de usuário <b>ou</b> Email</string>
+    <string name="Senha_Usuario">Digite sua senha</string>
+    <string name="Esqueceu_Senha">Esqueceu sua senha?</string>
+    <string name="Email_cadastro">Digite seu email</string>
+    <string name="Nome_Cadastro">Digite seu nome</string>
+    <string name="Senha_Cadastro">Digite sua senha</string>
+    <string name="Noticia1">Inscrições para o Enem 2024 terminam nesta sexta-feira</string>
+    <string name="Noticia2">Como estudar para o Enem? 7 dicas para ajudar você nessa missão</string>
+    <string name="VerMais">Ver Mais</string>
+</resources>

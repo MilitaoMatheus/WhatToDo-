@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TelaInicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Chapeu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="136dp"
+        android:src="@drawable/chapeu"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/InfoTelaInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="393dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/Ola_TelaInicial"
+        android:textColor="@color/blue"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/Line1"
+        android:layout_width="342dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="615dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="274dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Info2TelaInicial"
+        android:layout_width="303dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="498dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="310dp"
+        android:text="@string/Info_TelaInicial"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Chapeu1"
+        android:layout_width="259dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="497dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chapeu" />
+
+    <Button
+        android:id="@+id/BotaoEntrar"
+        android:onClick="IrEntrar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="682dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="149dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="@string/Botao_Entrar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BotaoCadastrar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="755dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/nunito_extrabold"
+        android:foregroundTint="@color/blue"
+        android:foregroundTintMode="add"
+        android:onClick="IrCadastrar"
+        android:text="@string/Botao_Cadastrar"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="3dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

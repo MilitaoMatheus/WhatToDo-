@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TelaRegistro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_2"
+    android:onClick="Cadastrar"
+    tools:context=".TelaRegistro">
+
+    <ImageView
+        android:id="@+id/Chapeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/Chapeu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="282dp"
+        android:src="@drawable/chapeu"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/EmailUsuario"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="265dp"
+        android:ems="10"
+        android:hint="@string/Email_cadastro"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/InfoTelaInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="338dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="469dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="@string/Cadastro"
+        android:textColor="@color/blue"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NomeUsuario"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="521dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="346dp"
+        android:ems="10"
+        android:hint="@string/Email_cadastro"
+        android:inputType="text"
+        android:textColorHint="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SenhaUsuario"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="186dp"
+        android:ems="10"
+        android:hint="@string/Senha_Usuario"
+        android:inputType="textPassword"
+        android:textColorHint="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BotaoCadastrarApp"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="809dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="53dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/nunito_extrabold"
+        android:onClick="Cadastrar"
+        android:text="@string/Cadastrar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
