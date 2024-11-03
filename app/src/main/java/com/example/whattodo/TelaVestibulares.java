@@ -46,4 +46,9 @@ public class TelaVestibulares extends AppCompatActivity {
         Intent intent = new Intent(this, TelaVestibulares.class);
         startActivity(intent);
     }
+
+    public void NavegarMateriais (View view) {
+        Intent intent = new Intent(this, TelaMateriais.class);
+        startActivity(intent);
+    }
 }
