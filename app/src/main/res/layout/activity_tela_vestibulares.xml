@@ -5,11 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/snow"
-    tools:context=".TelaMenu">
+    tools:context=".TelaVestibulares">
+
+    <ImageView
+        android:id="@+id/imgFuvest"
+        android:layout_width="379dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/fuvest"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="432dp" />
 
     <ImageButton
-        android:id="@+id/btnInicio"
+        android:id="@+id/btnInicio2"
         android:layout_width="94dp"
         android:layout_height="82dp"
         android:layout_marginStart="27dp"
@@ -27,7 +34,7 @@
         tools:src="@drawable/baseline_house_24" />
 
     <View
-        android:id="@+id/Line1"
+        android:id="@+id/line"
         android:layout_width="410dp"
         android:layout_height="5dp"
         android:background="@color/blue"
@@ -35,7 +42,7 @@
         tools:layout_editor_absoluteY="802dp" />
 
     <TextView
-        android:id="@+id/nomeAPP"
+        android:id="@+id/nomeAPP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -52,7 +59,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/Line"
+        android:id="@+id/line2"
         android:layout_width="410dp"
         android:layout_height="5dp"
         android:layout_marginStart="2dp"
@@ -64,98 +71,112 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/TextNoticia1"
-        android:layout_width="199dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="346dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="495dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/Noticia1"
+    <Button
+        android:id="@+id/btnSite"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="Fuvest"
+        android:text="@string/Site"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/noticia"
-        android:layout_width="410dp"
-        android:layout_height="264dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="568dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_1" />
-
-    <TextView
-        android:id="@+id/TextNoticia2"
-        android:layout_width="199dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="685dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="156dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/Noticia2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/Noticia2"
-        android:layout_width="410dp"
-        android:layout_height="264dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="220dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_2" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btnVerMais1"
-        android:layout_width="123dp"
+        android:id="@+id/btnSite2"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="496dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="Enem"
+        android:text="@string/Site"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEnem"
+        android:layout_width="354dp"
         android:layout_height="62dp"
-        android:layout_marginStart="246dp"
-        android:layout_marginTop="346dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="506dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="294dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="558dp"
+        android:text="@string/Enem"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDatas"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="732dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="120dp"
         android:backgroundTint="@color/blue"
         android:onClick="Pesquisar"
-        android:text="@string/VerMais"
+        android:text="@string/Datas"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnVerMais2"
+        android:id="@+id/btnDatas2"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="495dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="Pesquisar"
+        android:text="@string/Datas"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDescricao"
         android:layout_width="123dp"
         android:layout_height="62dp"
-        android:layout_marginStart="246dp"
-        android:layout_marginTop="685dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="167dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="496dp"
         android:backgroundTint="@color/blue"
-        android:onClick="Pesquisar1"
-        android:text="@string/VerMais"
+        android:onClick="Pesquisar"
+        android:text="@string/Descricao"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnVestbular"
+        android:id="@+id/btnVestbular2"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="165dp"
@@ -174,7 +195,7 @@
         app:srcCompat="@drawable/vestibulares_icon1" />
 
     <ImageButton
-        android:id="@+id/btnMateriais"
+        android:id="@+id/btnMateriais2"
         android:layout_width="86dp"
         android:layout_height="81dp"
         android:layout_marginStart="296dp"
@@ -192,7 +213,7 @@
         app:srcCompat="@drawable/materiais_icon1" />
 
     <TextView
-        android:id="@+id/txtVestibulares"
+        android:id="@+id/txtVestibulares2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -209,7 +230,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtMateriais"
+        android:id="@+id/txtMateriais2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="306dp"
@@ -225,7 +246,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtInicio"
+        android:id="@+id/txtInicio2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -240,4 +261,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="379dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="593dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enem" />
+
+    <TextView
+        android:id="@+id/txtFuvest"
+        android:layout_width="354dp"
+        android:layout_height="62dp"
+        android:text="@string/Fuvest"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="670dp" />
+
+    <Button
+        android:id="@+id/btnDescricao2"
+        android:layout_width="123dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="Pesquisar"
+        android:text="@string/Descricao"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="732dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
